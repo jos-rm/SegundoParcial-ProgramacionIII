@@ -1,2 +1,2 @@
 # SegundoParcial-ProgramacionIII
-Segundo examen parcial de Programación III
+Segundo examen parcial de Programación III -- Joseline Ruiz
