@@ -51,6 +51,6 @@ namespace PruebaParcial2_JoselineRuiz.Models
         //relación uno a muchos con Meta
         [ForeignKey("Meta")]
         public int MetaId { get; set; }
-        public virtual Meta? Meta { get; set; }
+        public virtual Meta Meta { get; set; }
     }
 }

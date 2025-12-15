@@ -39,26 +39,18 @@ namespace PruebaParcial2_JoselineRuiz.Controllers
         }
 
         // POST: Tareas/Create
-        // POST: Tareas/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("IdTarea,Descripcion,FechaCreacion,FechaLimite,Estado,Dificultad,TiempoEstimadoHoras,MetaId")] Tarea tarea)
         {
             if (ModelState.IsValid)
             {
-                try
-                {
-                    _context.Add(tarea);
-                    await _context.SaveChangesAsync();
-                    return RedirectToAction(nameof(Index));
-                }
-                catch
-                {
-                    ModelState.AddModelError("", "Ocurrió un error al guardar la tarea.");
-                }
+                _context.Add(tarea);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));  // ⭐ Debe redirigir a Index
             }
 
-            //si hay error, volver a cargar los datos
+            // Recargar ViewBags
             ViewBag.Metas = new SelectList(_context.Meta, "IdMeta", "Titulo", tarea.MetaId);
             ViewBag.Estados = new SelectList(Enum.GetValues(typeof(EstadoTarea)), tarea.Estado);
             ViewBag.Dificultades = new SelectList(Enum.GetValues(typeof(DificultadTarea)), tarea.Dificultad);
