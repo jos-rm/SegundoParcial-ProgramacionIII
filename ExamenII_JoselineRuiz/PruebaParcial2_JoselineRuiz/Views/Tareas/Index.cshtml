@@ -1,0 +1,54 @@
+﻿@model IEnumerable<PruebaParcial2_JoselineRuiz.Models.Tarea>
+
+@{
+    ViewData["Title"] = "Listado de Tareas";
+}
+
+<h2>Tareas</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Crear Nueva Tarea</a>
+</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Descripcion)</th>
+            <th>@Html.DisplayNameFor(model => model.FechaCreacion)</th>
+            <th>@Html.DisplayNameFor(model => model.FechaLimite)</th>
+            <th>@Html.DisplayNameFor(model => model.Estado)</th>
+            <th>@Html.DisplayNameFor(model => model.Dificultad)</th>
+            <th>@Html.DisplayNameFor(model => model.TiempoEstimado)</th>
+            <th>Meta</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Descripcion)</td>
+                    <td>@item.FechaCreacion.ToString("dd/MM/yyyy HH:mm")</td>
+                    <td>@(item.FechaLimite?.ToString("dd/MM/yyyy") ?? "Sin fecha límite")</td>
+                    <td>@Html.DisplayFor(modelItem => item.Estado)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Dificultad)</td>
+                    <td>@item.TiempoEstimado.ToString("hh\\:mm")</td>
+                    <td>@(item.Meta?.Titulo ?? "Sin meta")</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.IdTarea" class="btn btn-sm btn-warning">Editar</a> |
+                        <a asp-action="Details" asp-route-id="@item.IdTarea" class="btn btn-sm btn-info">Detalles</a> |
+                        <a asp-action="Delete" asp-route-id="@item.IdTarea" class="btn btn-sm btn-danger">Eliminar</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="8" class="text-center">No hay tareas registradas. <a asp-action="Create">Crear la primera tarea</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

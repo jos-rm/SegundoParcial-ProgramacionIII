@@ -1,0 +1,56 @@
+﻿@model IEnumerable<PruebaParcial2_JoselineRuiz.Models.Meta>
+
+@{
+    ViewData["Title"] = "Listado de Metas";
+}
+
+<h2>Metas</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Crear Nueva Meta</a>
+</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Titulo)</th>
+            <th>@Html.DisplayNameFor(model => model.Descripcion)</th>
+            <th>@Html.DisplayNameFor(model => model.Categoria)</th>
+            <th>@Html.DisplayNameFor(model => model.FechaCreacion)</th>
+            <th>@Html.DisplayNameFor(model => model.FechaLimite)</th>
+            <th>@Html.DisplayNameFor(model => model.Prioridad)</th>
+            <th>@Html.DisplayNameFor(model => model.Estado)</th>
+            <th>Tareas</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Titulo)</td>
+                    <td>@(item.Descripcion ?? "-")</td>
+                    <td>@Html.DisplayFor(modelItem => item.Categoria)</td>
+                    <td>@item.FechaCreacion.ToString("dd/MM/yyyy HH:mm")</td>
+                    <td>@(item.FechaLimite?.ToString("dd/MM/yyyy") ?? "Sin Fecha Límite")</td>
+                    <td>@Html.DisplayFor(modelItem => item.Prioridad)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Estado)</td>
+                    <td>@item.Tareas.Count</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.IdMeta" class="btn btn-sm btn-warning">Editar</a> |
+                        <a asp-action="Details" asp-route-id="@item.IdMeta" class="btn btn-sm btn-info">Detalles</a> |
+                        <a asp-action="Delete" asp-route-id="@item.IdMeta" class="btn btn-sm btn-danger">Eliminar</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="9" class="text-center">No hay metas registradas. <a asp-action="Create">Crear la primera meta</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

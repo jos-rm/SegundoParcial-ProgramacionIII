@@ -1,0 +1,38 @@
+﻿@model PruebaParcial2_JoselineRuiz.Models.Meta
+
+@{
+    ViewData["Title"] = "Eliminar Meta";
+}
+
+<h2>Eliminar Meta</h2>
+
+<h3>¿Está seguro que desea eliminar esta meta?</h3>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Titulo)</dt>
+        <dd class="col-sm-9">@Html.DisplayFor(model => model.Titulo)</dd>
+
+        <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Descripcion)</dt>
+        <dd class="col-sm-9">@(Model.Descripcion ?? "-")</dd>
+
+        <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Categoria)</dt>
+        <dd class="col-sm-9">@Html.DisplayFor(model => model.Categoria)</dd>
+
+        <dt class="col-sm-3">Cantidad de Tareas</dt>
+        <dd class="col-sm-9">@Model.Tareas.Count</dd>
+    </dl>
+
+    @if (Model.Tareas.Any())
+    {
+        <div class="alert alert-warning">
+            <strong>Advertencia:</strong> Esta meta tiene @Model.Tareas.Count tarea(s) asociada(s). Al eliminarla, también se eliminarán todas sus tareas.
+        </div>
+    }
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="IdMeta" />
+        <button type="submit" class="btn btn-danger">Eliminar</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
