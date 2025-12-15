@@ -18,7 +18,7 @@
             <th>@Html.DisplayNameFor(model => model.FechaLimite)</th>
             <th>@Html.DisplayNameFor(model => model.Estado)</th>
             <th>@Html.DisplayNameFor(model => model.Dificultad)</th>
-            <th>@Html.DisplayNameFor(model => model.TiempoEstimado)</th>
+            <th>@Html.DisplayNameFor(model => model.TiempoEstimadoHoras)</th>
             <th>Meta</th>
             <th>Acciones</th>
         </tr>
@@ -34,7 +34,7 @@
                     <td>@(item.FechaLimite?.ToString("dd/MM/yyyy") ?? "Sin fecha límite")</td>
                     <td>@Html.DisplayFor(modelItem => item.Estado)</td>
                     <td>@Html.DisplayFor(modelItem => item.Dificultad)</td>
-                    <td>@item.TiempoEstimado.ToString("hh\\:mm")</td>
+                    <td>@item.TiempoEstimadoHoras hrs</td>
                     <td>@(item.Meta?.Titulo ?? "Sin meta")</td>
                     <td>
                         <a asp-action="Edit" asp-route-id="@item.IdTarea" class="btn btn-sm btn-warning">Editar</a> |

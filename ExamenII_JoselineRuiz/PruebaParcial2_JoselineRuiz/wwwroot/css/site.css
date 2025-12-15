@@ -20,3 +20,52 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+/* Estilos para el Home */
+.hover-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .hover-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+    }
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
+}
+
+/* Hero Section */
+.display-1 {
+    font-size: 5rem;
+}
+
+/* Animación suave para los botones */
+.btn {
+    transition: all 0.3s ease;
+}
+
+    .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+/* Cards */
+.card {
+    border-radius: 15px;
+}
+
+/* Background gradiente opcional para hero */
+.bg-gradient-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Iconos más grandes en stats */
+.bi {
+    transition: transform 0.3s ease;
+}
+
+    .bi:hover {
+        transform: scale(1.2);
+    }

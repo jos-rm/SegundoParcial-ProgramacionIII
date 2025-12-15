@@ -92,8 +92,8 @@ namespace PruebaParcial2_JoselineRuiz.Migrations
                     b.Property<int>("MetaId")
                         .HasColumnType("int");
 
-                    b.Property<TimeOnly>("TiempoEstimado")
-                        .HasColumnType("time");
+                    b.Property<decimal>("TiempoEstimadoHoras")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("IdTarea");
 

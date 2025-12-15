@@ -44,8 +44,9 @@ namespace PruebaParcial2_JoselineRuiz.Models
         public DificultadTarea Dificultad { get; set; }
 
         [Required]
-        [DisplayName("Tiempo Estimado")]
-        public TimeOnly TiempoEstimado { get; set; }
+        [DisplayName("Tiempo Estimado (horas)")]
+        [Range(0.1, 999, ErrorMessage = "El tiempo debe ser entre 0.1 y 999 horas")]
+        public decimal TiempoEstimadoHoras { get; set; }
 
         //relación uno a muchos con Meta
         [ForeignKey("Meta")]

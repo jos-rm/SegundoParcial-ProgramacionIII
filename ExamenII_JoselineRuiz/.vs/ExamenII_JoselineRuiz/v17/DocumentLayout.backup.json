@@ -3,28 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\rooto\\source\\repos\\ExamenII_JoselineRuiz\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{02D29F3E-7DB6-41C0-918B-9B4104C67C94}|PruebaParcial2_JoselineRuiz\\PruebaParcial2_JoselineRuiz.csproj|c:\\users\\rooto\\source\\repos\\examenii_joselineruiz\\pruebaparcial2_joselineruiz\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{02D29F3E-7DB6-41C0-918B-9B4104C67C94}|PruebaParcial2_JoselineRuiz\\PruebaParcial2_JoselineRuiz.csproj|solutionrelative:pruebaparcial2_joselineruiz\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{02D29F3E-7DB6-41C0-918B-9B4104C67C94}|PruebaParcial2_JoselineRuiz\\PruebaParcial2_JoselineRuiz.csproj|c:\\users\\rooto\\source\\repos\\examenii_joselineruiz\\pruebaparcial2_joselineruiz\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{02D29F3E-7DB6-41C0-918B-9B4104C67C94}|PruebaParcial2_JoselineRuiz\\PruebaParcial2_JoselineRuiz.csproj|solutionrelative:pruebaparcial2_joselineruiz\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02D29F3E-7DB6-41C0-918B-9B4104C67C94}|PruebaParcial2_JoselineRuiz\\PruebaParcial2_JoselineRuiz.csproj|c:\\users\\rooto\\source\\repos\\examenii_joselineruiz\\pruebaparcial2_joselineruiz\\views\\metas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{02D29F3E-7DB6-41C0-918B-9B4104C67C94}|PruebaParcial2_JoselineRuiz\\PruebaParcial2_JoselineRuiz.csproj|solutionrelative:pruebaparcial2_joselineruiz\\views\\metas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{02D29F3E-7DB6-41C0-918B-9B4104C67C94}|PruebaParcial2_JoselineRuiz\\PruebaParcial2_JoselineRuiz.csproj|c:\\users\\rooto\\source\\repos\\examenii_joselineruiz\\pruebaparcial2_joselineruiz\\views\\tareas\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{02D29F3E-7DB6-41C0-918B-9B4104C67C94}|PruebaParcial2_JoselineRuiz\\PruebaParcial2_JoselineRuiz.csproj|solutionrelative:pruebaparcial2_joselineruiz\\views\\tareas\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{02D29F3E-7DB6-41C0-918B-9B4104C67C94}|PruebaParcial2_JoselineRuiz\\PruebaParcial2_JoselineRuiz.csproj|c:\\users\\rooto\\source\\repos\\examenii_joselineruiz\\pruebaparcial2_joselineruiz\\views\\tareas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{02D29F3E-7DB6-41C0-918B-9B4104C67C94}|PruebaParcial2_JoselineRuiz\\PruebaParcial2_JoselineRuiz.csproj|solutionrelative:pruebaparcial2_joselineruiz\\views\\tareas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{02D29F3E-7DB6-41C0-918B-9B4104C67C94}|PruebaParcial2_JoselineRuiz\\PruebaParcial2_JoselineRuiz.csproj|c:\\users\\rooto\\source\\repos\\examenii_joselineruiz\\pruebaparcial2_joselineruiz\\views\\tareas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{02D29F3E-7DB6-41C0-918B-9B4104C67C94}|PruebaParcial2_JoselineRuiz\\PruebaParcial2_JoselineRuiz.csproj|solutionrelative:pruebaparcial2_joselineruiz\\views\\tareas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02D29F3E-7DB6-41C0-918B-9B4104C67C94}|PruebaParcial2_JoselineRuiz\\PruebaParcial2_JoselineRuiz.csproj|c:\\users\\rooto\\source\\repos\\examenii_joselineruiz\\pruebaparcial2_joselineruiz\\views\\metas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{02D29F3E-7DB6-41C0-918B-9B4104C67C94}|PruebaParcial2_JoselineRuiz\\PruebaParcial2_JoselineRuiz.csproj|solutionrelative:pruebaparcial2_joselineruiz\\views\\metas\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{02D29F3E-7DB6-41C0-918B-9B4104C67C94}|PruebaParcial2_JoselineRuiz\\PruebaParcial2_JoselineRuiz.csproj|c:\\users\\rooto\\source\\repos\\examenii_joselineruiz\\pruebaparcial2_joselineruiz\\views\\tareas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{02D29F3E-7DB6-41C0-918B-9B4104C67C94}|PruebaParcial2_JoselineRuiz\\PruebaParcial2_JoselineRuiz.csproj|solutionrelative:pruebaparcial2_joselineruiz\\views\\tareas\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02D29F3E-7DB6-41C0-918B-9B4104C67C94}|PruebaParcial2_JoselineRuiz\\PruebaParcial2_JoselineRuiz.csproj|c:\\users\\rooto\\source\\repos\\examenii_joselineruiz\\pruebaparcial2_joselineruiz\\controllers\\tareascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02D29F3E-7DB6-41C0-918B-9B4104C67C94}|PruebaParcial2_JoselineRuiz\\PruebaParcial2_JoselineRuiz.csproj|solutionrelative:pruebaparcial2_joselineruiz\\controllers\\tareascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{02D29F3E-7DB6-41C0-918B-9B4104C67C94}|PruebaParcial2_JoselineRuiz\\PruebaParcial2_JoselineRuiz.csproj|c:\\users\\rooto\\source\\repos\\examenii_joselineruiz\\pruebaparcial2_joselineruiz\\models\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{02D29F3E-7DB6-41C0-918B-9B4104C67C94}|PruebaParcial2_JoselineRuiz\\PruebaParcial2_JoselineRuiz.csproj|solutionrelative:pruebaparcial2_joselineruiz\\models\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{02D29F3E-7DB6-41C0-918B-9B4104C67C94}|PruebaParcial2_JoselineRuiz\\PruebaParcial2_JoselineRuiz.csproj|c:\\users\\rooto\\source\\repos\\examenii_joselineruiz\\pruebaparcial2_joselineruiz\\controllers\\tareascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02D29F3E-7DB6-41C0-918B-9B4104C67C94}|PruebaParcial2_JoselineRuiz\\PruebaParcial2_JoselineRuiz.csproj|solutionrelative:pruebaparcial2_joselineruiz\\controllers\\tareascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02D29F3E-7DB6-41C0-918B-9B4104C67C94}|PruebaParcial2_JoselineRuiz\\PruebaParcial2_JoselineRuiz.csproj|c:\\users\\rooto\\source\\repos\\examenii_joselineruiz\\pruebaparcial2_joselineruiz\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{02D29F3E-7DB6-41C0-918B-9B4104C67C94}|PruebaParcial2_JoselineRuiz\\PruebaParcial2_JoselineRuiz.csproj|solutionrelative:pruebaparcial2_joselineruiz\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{02D29F3E-7DB6-41C0-918B-9B4104C67C94}|PruebaParcial2_JoselineRuiz\\PruebaParcial2_JoselineRuiz.csproj|c:\\users\\rooto\\source\\repos\\examenii_joselineruiz\\pruebaparcial2_joselineruiz\\models\\meta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,25 +55,64 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\rooto\\source\\repos\\ExamenII_JoselineRuiz\\PruebaParcial2_JoselineRuiz\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "PruebaParcial2_JoselineRuiz\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\rooto\\source\\repos\\ExamenII_JoselineRuiz\\PruebaParcial2_JoselineRuiz\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "PruebaParcial2_JoselineRuiz\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-12-15T04:11:38.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\rooto\\source\\repos\\ExamenII_JoselineRuiz\\PruebaParcial2_JoselineRuiz\\Views\\Tareas\\Details.cshtml",
+              "RelativeDocumentMoniker": "PruebaParcial2_JoselineRuiz\\Views\\Tareas\\Details.cshtml",
+              "ToolTip": "C:\\Users\\rooto\\source\\repos\\ExamenII_JoselineRuiz\\PruebaParcial2_JoselineRuiz\\Views\\Tareas\\Details.cshtml",
+              "RelativeToolTip": "PruebaParcial2_JoselineRuiz\\Views\\Tareas\\Details.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T04:04:03.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\rooto\\source\\repos\\ExamenII_JoselineRuiz\\PruebaParcial2_JoselineRuiz\\Views\\Tareas\\Edit.cshtml",
+              "RelativeDocumentMoniker": "PruebaParcial2_JoselineRuiz\\Views\\Tareas\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\rooto\\source\\repos\\ExamenII_JoselineRuiz\\PruebaParcial2_JoselineRuiz\\Views\\Tareas\\Edit.cshtml",
+              "RelativeToolTip": "PruebaParcial2_JoselineRuiz\\Views\\Tareas\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-15T04:02:15.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\rooto\\source\\repos\\ExamenII_JoselineRuiz\\PruebaParcial2_JoselineRuiz\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "PruebaParcial2_JoselineRuiz\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\rooto\\source\\repos\\ExamenII_JoselineRuiz\\PruebaParcial2_JoselineRuiz\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "PruebaParcial2_JoselineRuiz\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-12-14T02:55:48.281Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\rooto\\source\\repos\\ExamenII_JoselineRuiz\\PruebaParcial2_JoselineRuiz\\Views\\Metas\\Edit.cshtml",
               "RelativeDocumentMoniker": "PruebaParcial2_JoselineRuiz\\Views\\Metas\\Edit.cshtml",
               "ToolTip": "C:\\Users\\rooto\\source\\repos\\ExamenII_JoselineRuiz\\PruebaParcial2_JoselineRuiz\\Views\\Metas\\Edit.cshtml",
               "RelativeToolTip": "PruebaParcial2_JoselineRuiz\\Views\\Metas\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAABJAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAADAAAABjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-12-14T01:58:06.977Z",
               "EditorCaption": ""
@@ -74,49 +125,53 @@
               "RelativeDocumentMoniker": "PruebaParcial2_JoselineRuiz\\Views\\Tareas\\Index.cshtml",
               "ToolTip": "C:\\Users\\rooto\\source\\repos\\ExamenII_JoselineRuiz\\PruebaParcial2_JoselineRuiz\\Views\\Tareas\\Index.cshtml",
               "RelativeToolTip": "PruebaParcial2_JoselineRuiz\\Views\\Tareas\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADAAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-14T01:42:20.924Z"
+              "WhenOpened": "2025-12-14T01:42:20.924Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "TareasController.cs",
               "DocumentMoniker": "C:\\Users\\rooto\\source\\repos\\ExamenII_JoselineRuiz\\PruebaParcial2_JoselineRuiz\\Controllers\\TareasController.cs",
               "RelativeDocumentMoniker": "PruebaParcial2_JoselineRuiz\\Controllers\\TareasController.cs",
               "ToolTip": "C:\\Users\\rooto\\source\\repos\\ExamenII_JoselineRuiz\\PruebaParcial2_JoselineRuiz\\Controllers\\TareasController.cs",
               "RelativeToolTip": "PruebaParcial2_JoselineRuiz\\Controllers\\TareasController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-14T01:41:56.948Z"
+              "WhenOpened": "2025-12-14T01:41:56.948Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\rooto\\source\\repos\\ExamenII_JoselineRuiz\\PruebaParcial2_JoselineRuiz\\Views\\Tareas\\Create.cshtml",
               "RelativeDocumentMoniker": "PruebaParcial2_JoselineRuiz\\Views\\Tareas\\Create.cshtml",
               "ToolTip": "C:\\Users\\rooto\\source\\repos\\ExamenII_JoselineRuiz\\PruebaParcial2_JoselineRuiz\\Views\\Tareas\\Create.cshtml",
               "RelativeToolTip": "PruebaParcial2_JoselineRuiz\\Views\\Tareas\\Create.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-14T01:31:48.189Z"
+              "WhenOpened": "2025-12-14T01:31:48.189Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Tarea.cs",
               "DocumentMoniker": "C:\\Users\\rooto\\source\\repos\\ExamenII_JoselineRuiz\\PruebaParcial2_JoselineRuiz\\Models\\Tarea.cs",
               "RelativeDocumentMoniker": "PruebaParcial2_JoselineRuiz\\Models\\Tarea.cs",
               "ToolTip": "C:\\Users\\rooto\\source\\repos\\ExamenII_JoselineRuiz\\PruebaParcial2_JoselineRuiz\\Models\\Tarea.cs",
               "RelativeToolTip": "PruebaParcial2_JoselineRuiz\\Models\\Tarea.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T23:29:13.854Z"
+              "WhenOpened": "2025-12-13T23:29:13.854Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Meta.cs",
               "DocumentMoniker": "C:\\Users\\rooto\\source\\repos\\ExamenII_JoselineRuiz\\PruebaParcial2_JoselineRuiz\\Models\\Meta.cs",
               "RelativeDocumentMoniker": "PruebaParcial2_JoselineRuiz\\Models\\Meta.cs",

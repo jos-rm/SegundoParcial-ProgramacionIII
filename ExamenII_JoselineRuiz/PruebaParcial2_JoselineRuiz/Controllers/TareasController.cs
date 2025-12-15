@@ -41,7 +41,7 @@ namespace PruebaParcial2_JoselineRuiz.Controllers
         // POST: Tareas/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdTarea,Descripcion,FechaCreacion,FechaLimite,Estado,Dificultad,TiempoEstimado,MetaId")] Tarea tarea)
+        public async Task<IActionResult> Create([Bind("IdTarea,Descripcion,FechaCreacion,FechaLimite,Estado,Dificultad,TiempoEstimadoHoras,MetaId")] Tarea tarea)
         {
             try
             {
@@ -87,7 +87,7 @@ namespace PruebaParcial2_JoselineRuiz.Controllers
         // POST: Tareas/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdTarea,Descripcion,FechaCreacion,FechaLimite,Estado,Dificultad,TiempoEstimado,MetaId")] Tarea tarea)
+        public async Task<IActionResult> Edit(int id, [Bind("IdTarea,Descripcion,FechaCreacion,FechaLimite,Estado,Dificultad,TiempoEstimadoHoras,MetaId")] Tarea tarea)
         {
             if (id != tarea.IdTarea)
             {
@@ -120,6 +120,61 @@ namespace PruebaParcial2_JoselineRuiz.Controllers
             ViewBag.Dificultades = new SelectList(Enum.GetValues(typeof(DificultadTarea)), tarea.Dificultad);
 
             return View(tarea);
+        }
+
+        // GET: Tareas/Details/5
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var tarea = await _context.Tarea
+                .Include(t => t.Meta)
+                .FirstOrDefaultAsync(m => m.IdTarea == id);
+
+            if (tarea == null)
+            {
+                return NotFound();
+            }
+
+            return View(tarea);
+        }
+
+        // GET: Tareas/Delete/5
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var tarea = await _context.Tarea
+                .Include(t => t.Meta)
+                .FirstOrDefaultAsync(m => m.IdTarea == id);
+
+            if (tarea == null)
+            {
+                return NotFound();
+            }
+
+            return View(tarea);
+        }
+
+        // POST: Tareas/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var tarea = await _context.Tarea.FindAsync(id);
+            if (tarea != null)
+            {
+                _context.Tarea.Remove(tarea);
+                await _context.SaveChangesAsync();
+            }
+
+            return RedirectToAction(nameof(Index));
         }
 
         private bool TareaExists(int id)
