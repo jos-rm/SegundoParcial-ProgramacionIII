@@ -1,3 +1,4 @@
+wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
@@ -1935,4 +1936,3 @@ wwwroot\lib\startbootstrap-sb-admin-2-gh-pages\vendor\jquery\jquery.min.map
 wwwroot\lib\startbootstrap-sb-admin-2-gh-pages\vendor\jquery\jquery.slim.js
 wwwroot\lib\startbootstrap-sb-admin-2-gh-pages\vendor\jquery\jquery.slim.min.js
 wwwroot\lib\startbootstrap-sb-admin-2-gh-pages\vendor\jquery\jquery.slim.min.map
-wwwroot\css\site.css

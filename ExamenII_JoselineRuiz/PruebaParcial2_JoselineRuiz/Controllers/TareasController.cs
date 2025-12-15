@@ -39,19 +39,23 @@ namespace PruebaParcial2_JoselineRuiz.Controllers
         }
 
         // POST: Tareas/Create
+        // POST: Tareas/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("IdTarea,Descripcion,FechaCreacion,FechaLimite,Estado,Dificultad,TiempoEstimadoHoras,MetaId")] Tarea tarea)
         {
-            try
+            if (ModelState.IsValid)
             {
-                _context.Add(tarea);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                throw;
+                try
+                {
+                    _context.Add(tarea);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+                catch
+                {
+                    ModelState.AddModelError("", "Ocurrió un error al guardar la tarea.");
+                }
             }
 
             //si hay error, volver a cargar los datos

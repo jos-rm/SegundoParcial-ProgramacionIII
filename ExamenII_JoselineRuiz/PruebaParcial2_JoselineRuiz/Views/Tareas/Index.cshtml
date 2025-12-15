@@ -34,7 +34,7 @@
                     <td>@(item.FechaLimite?.ToString("dd/MM/yyyy") ?? "Sin fecha límite")</td>
                     <td>@Html.DisplayFor(modelItem => item.Estado)</td>
                     <td>@Html.DisplayFor(modelItem => item.Dificultad)</td>
-                    <td>@item.TiempoEstimadoHoras hrs</td>
+                    <td>@item.TiempoEstimadoHoras.ToString("0.##") hrs</td>
                     <td>@(item.Meta?.Titulo ?? "Sin meta")</td>
                     <td>
                         <a asp-action="Edit" asp-route-id="@item.IdTarea" class="btn btn-sm btn-warning">Editar</a> |

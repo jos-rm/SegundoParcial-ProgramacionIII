@@ -1,65 +1,82 @@
 ﻿@model PruebaParcial2_JoselineRuiz.Models.Tarea
 
 @{
-    ViewData["Title"] = "Crear Tarea";
+    ViewData["Title"] = "Editar Tarea";
 }
 
-<h2>Crear Nueva Tarea</h2>
-
-<hr />
-<div class="row">
-    <div class="col-md-6">
-        <form asp-action="Create">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-
-            <div class="form-group mb-3">
-                <label asp-for="Descripcion" class="control-label"></label>
-                <textarea asp-for="Descripcion" class="form-control" rows="3"></textarea>
-                <span asp-validation-for="Descripcion" class="text-danger"></span>
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow">
+            <div class="card-header bg-warning text-dark">
+                <h3 class="mb-0">
+                    <i class="bi bi-pencil"></i> Editar Tarea
+                </h3>
             </div>
+            <div class="card-body">
+                <form asp-action="Edit">
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
 
+                    <input type="hidden" asp-for="IdTarea" />
+                    <input type="hidden" asp-for="FechaCreacion" />
 
-            <div class="form-group mb-3">
-                <label asp-for="FechaLimite" class="control-label"></label>
-                <input asp-for="FechaLimite" class="form-control" type="date" />
-                <span asp-validation-for="FechaLimite" class="text-danger"></span>
+                    <div class="mb-3">
+                        <label asp-for="Descripcion" class="form-label fw-bold"></label>
+                        <textarea asp-for="Descripcion" class="form-control" rows="3" placeholder="Describe la tarea..."></textarea>
+                        <span asp-validation-for="Descripcion" class="text-danger"></span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="FechaLimite" class="form-label fw-bold">Fecha Límite (opcional)</label>
+                            <input asp-for="FechaLimite" class="form-control" type="date" />
+                            <span asp-validation-for="FechaLimite" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="TiempoEstimadoHoras" class="form-label fw-bold"></label>
+                            <input asp-for="TiempoEstimadoHoras" class="form-control" type="number" step="0.1" min="0.1" max="999" placeholder="Ej: 2.5" />
+                            <small class="form-text text-muted">Tiempo en horas</small>
+                            <span asp-validation-for="TiempoEstimadoHoras" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label asp-for="Estado" class="form-label fw-bold"></label>
+                            <select asp-for="Estado" class="form-select" asp-items="ViewBag.Estados">
+                                <option value="">-- Seleccione --</option>
+                            </select>
+                            <span asp-validation-for="Estado" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label asp-for="Dificultad" class="form-label fw-bold"></label>
+                            <select asp-for="Dificultad" class="form-select" asp-items="ViewBag.Dificultades">
+                                <option value="">-- Seleccione --</option>
+                            </select>
+                            <span asp-validation-for="Dificultad" class="text-danger"></span>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label asp-for="MetaId" class="form-label fw-bold">Meta</label>
+                            <select asp-for="MetaId" class="form-select" asp-items="ViewBag.Metas">
+                                <option value="">-- Seleccione --</option>
+                            </select>
+                            <span asp-validation-for="MetaId" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                        <a asp-action="Index" class="btn btn-secondary">
+                            <i class="bi bi-arrow-left"></i> Cancelar
+                        </a>
+                        <button type="submit" class="btn btn-warning">
+                            <i class="bi bi-save"></i> Guardar Cambios
+                        </button>
+                    </div>
+                </form>
             </div>
-
-            <div class="form-group mb-3">
-                <label asp-for="Estado" class="control-label"></label>
-                <select asp-for="Estado" class="form-control" asp-items="ViewBag.Estados">
-                    <option value="">-- Seleccione un estado --</option>
-                </select>
-                <span asp-validation-for="Estado" class="text-danger"></span>
-            </div>
-
-            <div class="form-group mb-3">
-                <label asp-for="Dificultad" class="control-label"></label>
-                <select asp-for="Dificultad" class="form-control" asp-items="ViewBag.Dificultades">
-                    <option value="">-- Seleccione dificultad --</option>
-                </select>
-                <span asp-validation-for="Dificultad" class="text-danger"></span>
-            </div>
-
-            <div class="form-group mb-3">
-                <label asp-for="TiempoEstimadoHoras" class="control-label"></label>
-                <input asp-for="TiempoEstimadoHoras" class="form-control" type="time" />
-                <span asp-validation-for="TiempoEstimadoHoras" class="text-danger"></span>
-            </div>
-
-            <div class="form-group mb-3">
-                <label asp-for="MetaId" class="control-label">Meta</label>
-                <select asp-for="MetaId" class="form-control" asp-items="ViewBag.Metas">
-                    <option value="">-- Seleccione una meta --</option>
-                </select>
-                <span asp-validation-for="MetaId" class="text-danger"></span>
-            </div>
-
-            <div class="form-group mt-3">
-                <input type="submit" value="Crear" class="btn btn-primary" />
-                <a asp-action="Index" class="btn btn-secondary">Volver al listado</a>
-            </div>
-        </form>
+        </div>
     </div>
 </div>
 
